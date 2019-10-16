@@ -1,3 +1,43 @@
-.App h1 {
-  color: blue;
+* {
+  margin: 0;
 }
+
+.homepage {
+  font-family: "Roboto Mono", monospace;
+}
+
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  width: 100%;
+  background-color: $lightpurple;
+}
+
+.left-side {
+  margin-left: 25px;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-right: 50px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 10px;
+}
+button {
+  padding: 10px 10px 10px 10px;
+}
+/* transition: opacity .5s ease-in-out;
+   color: #3c4859; for the profile */

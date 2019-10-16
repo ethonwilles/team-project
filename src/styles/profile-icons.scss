@@ -1,0 +1,15 @@
+.profile-space {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 400px;
+}
+
+.top-profiles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-profiles {
+  display: flex;
+  justify-content: space-between;
+}
