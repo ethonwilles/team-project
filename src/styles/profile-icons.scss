@@ -1,15 +1,52 @@
 .profile-space {
   display: flex;
   flex-direction: column;
-  margin: 100px 400px;
+  margin: 15vh 5vw;
 }
 
-.top-profiles {
+.items-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 125px;
 }
 
 .bottom-profiles {
   display: flex;
   justify-content: space-between;
+}
+
+.item {
+  width: 20vw;
+  height: 60vh;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 7px black;
+  background-color: $icegray;
+
+  &:hover {
+    cursor: pointer;
+    transition: 1.2s ease-in-out;
+    filter: brightness(15%);
+  }
+}
+.item img {
+  height: 50%;
+  width: 75%;
+  border-radius: 90px;
+  margin-top: 40px;
+}
+
+.meta {
+  padding: 0px;
+}
+
+.top-level {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  margin-top: 60px;
 }

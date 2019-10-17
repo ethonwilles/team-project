@@ -1,10 +1,17 @@
 import React, { Component } from "react";
 
-export default class Profilei extends Component {
+export default class ProfileIcon extends Component {
+  // Call API info
   render() {
     return (
-      <div>
-        <h1>Profile</h1>
+      <div className="profile">
+        <div className="item">
+          <img src="https://source.unsplash.com/random" alt="img" />
+          <div className="meta">
+            <div className="top-level">NAME</div>
+            {/* <div className="description">{description}</div> */}
+          </div>
+        </div>
       </div>
     );
   }

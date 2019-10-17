@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../styles/main.scss";
 import logo from "../images/logo.png";
-import Profilei from "../pages/profile-icon";
+import ProfileIcon from "../pages/profile-icon";
 
 export default class Home extends Component {
   render() {
@@ -15,7 +15,7 @@ export default class Home extends Component {
           </div>
 
           <div className="right-side">
-            <div className="buttons">
+            <div className="topnav-buttons">
               <button>nav 1</button>
               <button>nav 2</button>
               <button>nav 3</button>
@@ -25,21 +25,31 @@ export default class Home extends Component {
           </div>
         </div>
         <div className="profile-space">
-          <div className="top-profiles">
-            <Profilei />
-            <Profilei />
-            <Profilei />
-            <Profilei />
+          <div className="items-wrapper">
+            <ProfileIcon />
+            <ProfileIcon />
+            <ProfileIcon />
+            <ProfileIcon />
           </div>
 
           <div className="bottom-profiles">
-            <Profilei />
-            <Profilei />
-            <Profilei />
-            <Profilei />
+            <ProfileIcon />
+            <ProfileIcon />
+            <ProfileIcon />
+            <ProfileIcon />
           </div>
         </div>
-        <div className="bottom-navbar"></div>
+        <div className="bottom-navbar">
+          <div className="bottomnav-buttons">
+            <button>nav 1</button>
+            <button>nav 2</button>
+            <button>nav 3</button>
+            <button>nav 4</button>
+          </div>
+          <div className="copyright">
+            <p>&copy; 2019 Team 4</p>
+          </div>
+        </div>
       </div>
     );
   }

@@ -1,48 +1,92 @@
-<<<<<<< HEAD
 * {
   margin: 0;
-=======
+}
+
 .App h1 {
   color: $iceblue;
->>>>>>> d19abf482d885d72086410495a59e6b5eaf3ec2f
 }
 
 .homepage {
   font-family: "Roboto Mono", monospace;
+  background-color: $dirtice;
 }
 
 .top-navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 75px;
+  height: 100px;
   width: 100%;
   background-color: $lightpurple;
 }
 
 .left-side {
   margin-left: 25px;
+  width: 50%;
 }
 
 .right-side {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 50%;
   align-items: center;
   float: right;
-  margin-right: 50px;
+  margin-right: 35px;
 }
 
 .logo img {
   height: 60px;
 }
 
-.buttons {
+.topnav-buttons {
   display: flex;
-  justify-content: space-around;
-  padding: 0px 10px;
+  width: 700vw;
+  justify-content: space-between;
+
+  button {
+    padding: 15px 50px;
+  }
 }
+
+.username {
+  height: 100px;
+  margin-top: 15px;
+  color: $icegray;
+  margin-left: 15px;
+}
+
 button {
-  padding: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  background-color: $darkpurple;
+  border: none;
+  box-shadow: 0 5px 20px 0 gray;
+  color: $icegray;
+
+  &:active {
+    background-color: $activepurple;
+    transform: translateY(1px);
+  }
 }
-/* transition: opacity .5s ease-in-out;
-   color: #3c4859; for the profile */
+
+.bottom-navbar {
+  height: 100px;
+  width: 100%;
+  background-color: $lightpurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bottomnav-buttons {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  color: $icegray;
+}
