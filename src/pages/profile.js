@@ -4,10 +4,6 @@ import LeftColumn from "./profile-left-column";
 import RightColumn from "./profile-right-column";
 
 export default class Profile extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <div className="page">
