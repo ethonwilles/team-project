@@ -5,9 +5,10 @@
 }
 
 .items-wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   margin-bottom: 125px;
+  justify-items: center;
 }
 
 .bottom-profiles {
@@ -16,8 +17,10 @@
 }
 
 .item {
-  width: 20vw;
-  height: 60vh;
+  // width: 20vw;
+  width: 300px;
+  // height: 60vh;
+  height: 450px;
   margin: 10px;
   border-radius: 10px;
   overflow: hidden;

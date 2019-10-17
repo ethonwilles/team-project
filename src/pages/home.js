@@ -4,6 +4,10 @@ import logo from "../images/logo.png";
 import ProfileIcon from "../pages/profile-icon";
 
 export default class Home extends Component {
+  constructor() {
+    super();
+  }
+
   render() {
     return (
       <div className="homepage">
