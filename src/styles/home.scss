@@ -39,8 +39,13 @@
   // align-items: center;
 }
 
-.logo img {
-  height: 60px;
+.logo {
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    height: 60px;
+  }
 }
 
 .topnav-buttons {
