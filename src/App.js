@@ -16,7 +16,38 @@ class App extends React.Component {
     };
   }
 
+
   render() {
+
+  componentDidMount() {
+    fetch("https://projectteam4october2019.herokuapp.com/profiles")
+      .then(response => response.json())
+      .then(data => this.setState({ profiles: data }));
+  }
+
+  renderProfiles = () => {
+    return this.state.profiles.map(profile => {
+      return (
+        <div>
+          <ProfileIcon
+            key={profile.id}
+            title={profile.title}
+            id={profile.id}
+            img={profile.pic1}
+          />
+        </div>
+      );
+    });
+  };
+
+  handleChange = event => {
+    this.setState({ profile: event.target.value });
+  };
+
+  render() {
+    // console.log(this.state.profiles);
+
+
     return (
       <BrowserRouter>
         <Switch>

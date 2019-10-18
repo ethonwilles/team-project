@@ -3,6 +3,7 @@ import axios from "axios";
 import "../styles/main.scss";
 import logo from "../images/logo.png";
 import ProfileIcon from "../pages/profile-icon";
+import Profile from "../pages/profile";
 
 export default class Home extends Component {
   constructor(props) {
