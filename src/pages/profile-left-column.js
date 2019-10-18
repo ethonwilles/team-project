@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
-import {
-  faFacebook,
-  faTwitterSquare,
-  faInstagram,
-  faLinkedin
-} from "@fortawesome/free-brands-svg-icons";
+// import {
+//   faFacebook,
+//   faTwitterSquare,
+//   faInstagram,
+//   faLinkedin
+// } from "@fortawesome/free-brands-svg-icons";
 
 export default class LeftColumn extends Component {
   render() {

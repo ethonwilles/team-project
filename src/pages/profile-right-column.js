@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faTwitterSquare,
-  faInstagram,
-  faLinkedin
-} from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faFacebook,
+//   faTwitterSquare,
+//   faInstagram,
+//   faLinkedin
+// } from "@fortawesome/free-brands-svg-icons";
 
 export default class RightColumn extends Component {
   constructor(props) {
@@ -60,10 +60,10 @@ export default class RightColumn extends Component {
           <div className="social">
             <div className="spacer" />
             <div className="icons">
-              <FontAwesomeIcon icon={faFacebook} className="icon" />
+              {/* <FontAwesomeIcon icon={faFacebook} className="icon" />
               <FontAwesomeIcon icon={faTwitterSquare} className="icon" />
               <FontAwesomeIcon icon={faInstagram} className="icon" />
-              <FontAwesomeIcon icon={faLinkedin} className="icon" />
+              <FontAwesomeIcon icon={faLinkedin} className="icon" /> */}
             </div>
           </div>
           <div className="copyright">copyright</div>
