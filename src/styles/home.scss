@@ -46,7 +46,7 @@
 .topnav-buttons {
   display: flex;
   width: 700px;
-  justify-content: space-around;
+  justify-content: space-between;
 
   button {
     padding: 15px 50px;
@@ -107,4 +107,5 @@ button {
   width: 100%;
   color: black;
   transition: 0.3 ease-in-out;
+  text-align: center;
 }

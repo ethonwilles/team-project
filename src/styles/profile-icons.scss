@@ -34,10 +34,10 @@
   background-color: $icegray;
   transition: 0.3s ease-in-out;
 
-  // &:hover {
-  //   cursor: pointer;
-  //   filter: brightness(10%);
-  // }
+  &:hover {
+    cursor: pointer;
+    background-color: $lightpurple;
+  }
 }
 .item img {
   height: 225px;
@@ -50,10 +50,6 @@
   display: flex;
   justify-content: space-around;
   font-weight: bold;
-  margin-top: 90px;
-}
-
-.image-blur {
-  transition: 1s;
-  filter: brightness(10%);
+  margin-top: 50px;
+  text-align: center;
 }
