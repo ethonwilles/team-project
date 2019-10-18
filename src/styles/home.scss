@@ -27,12 +27,16 @@
 
 .right-side {
   display: flex;
+  // display: grid;
   justify-content: space-between;
+  // justify-items: center;
   height: 100px;
   width: 50%;
   align-items: center;
   float: right;
   margin-right: 35px;
+  // grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  // align-items: center;
 }
 
 .logo img {
@@ -41,7 +45,7 @@
 
 .topnav-buttons {
   display: flex;
-  width: 700vw;
+  width: 700px;
   justify-content: space-around;
 
   button {
@@ -64,8 +68,12 @@ button {
   box-shadow: 0 5px 20px 0 gray;
   color: $icegray;
 
-  &:active {
+  &:hover {
+    transition: 1s ease-in-out;
     background-color: $activepurple;
+  }
+
+  &:active {
     transform: translateY(1px);
   }
 }
@@ -89,4 +97,14 @@ button {
 
 .copyright {
   color: $icegray;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: black;
+  transition: 0.3 ease-in-out;
 }

@@ -1,11 +1,42 @@
 import React, { Component } from "react";
+import axios from "axios";
 import "../styles/main.scss";
 import logo from "../images/logo.png";
 import ProfileIcon from "../pages/profile-icon";
 
 export default class Home extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      profiles: []
+    };
+
+    this.profileItems = this.profileItems.bind(this);
+  }
+
+  componentDidMount() {
+    axios
+      .get("https://projectteam4october2019.herokuapp.com/profiles")
+      .then(response => {
+        this.setState({
+          profiles: response.data
+        });
+      });
+  }
+
+  profileItems() {
+    console.log(this.state.profiles);
+    return this.state.profiles.map(item => {
+      return (
+        <ProfileIcon
+          key={item.id}
+          title={item.title}
+          pic1={item.pic1}
+          description={item.title}
+        />
+      );
+    });
   }
 
   render() {
@@ -30,17 +61,8 @@ export default class Home extends Component {
         </div>
         <div className="profile-space">
           <div className="items-wrapper">
-            <ProfileIcon />
-            <ProfileIcon />
-            <ProfileIcon />
-            <ProfileIcon />
-          </div>
-
-          <div className="bottom-profiles">
-            <ProfileIcon />
-            <ProfileIcon />
-            <ProfileIcon />
-            <ProfileIcon />
+            {this.profileItems()}
+            {/* <ProfileIcon /> */}
           </div>
         </div>
         <div className="bottom-navbar">
