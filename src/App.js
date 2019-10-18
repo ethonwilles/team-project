@@ -25,12 +25,14 @@ class App extends React.Component {
   renderProfiles = () => {
     return this.state.profiles.map(profile => {
       return (
-        <ProfileIcon
-          key={profile.id}
-          title={profile.title}
-          id={profile.id}
-          img={profile.pic1}
-        />
+        <div>
+          <ProfileIcon
+            key={profile.id}
+            title={profile.title}
+            id={profile.id}
+            img={profile.pic1}
+          />
+        </div>
       );
     });
   };
@@ -41,6 +43,7 @@ class App extends React.Component {
 
   render() {
     // console.log(this.state.profiles);
+
     return (
       <div className="App">
         <BrowserRouter>
