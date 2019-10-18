@@ -16,9 +16,6 @@ class App extends React.Component {
     };
   }
 
-
-  render() {
-
   componentDidMount() {
     fetch("https://projectteam4october2019.herokuapp.com/profiles")
       .then(response => response.json())
@@ -46,8 +43,6 @@ class App extends React.Component {
 
   render() {
     // console.log(this.state.profiles);
-
-
     return (
       <BrowserRouter>
         <Switch>

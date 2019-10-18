@@ -1,3 +1,7 @@
+* {
+  text-decoration: none;
+}
+
 .profile-space {
   display: flex;
   flex-direction: column;
@@ -5,6 +9,7 @@
   margin-top: 15vh;
   margin-right: 5vw;
   margin-left: 5vw;
+  margin-bottom: -10vh;
 }
 
 .items-wrapper {
@@ -32,7 +37,7 @@
   align-items: center;
   box-shadow: 1px 1px 7px black;
   background-color: $icegray;
-  transition: 0.3s ease-in-out;
+  transition: 0.7s ease-in-out;
 
   &:hover {
     cursor: pointer;
@@ -52,4 +57,9 @@
   font-weight: bold;
   margin-top: 50px;
   text-align: center;
+  color: black;
+}
+
+.profile {
+  margin-bottom: 10vh;
 }
