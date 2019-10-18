@@ -1,4 +1,11 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitterSquare,
+  faInstagram,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 
 export default class RightColumn extends Component {
   constructor() {
@@ -11,7 +18,7 @@ export default class RightColumn extends Component {
     return (
       <div className="right-column">
         <div className="banner-img">
-          {/* <img src="" alt="banner-img" /> */}
+          <img src="https://source.unsplash.com/user/erondu" alt="banner-img" />
         </div>
         <div className="heading-wrapper">
           <div className="headline">
@@ -37,8 +44,8 @@ export default class RightColumn extends Component {
               itaque voluptates, tempore velit inventore nemo totam sapiente id.
               Quia ab atque explicabo repellat dicta cum?
             </p>
-            <img src="" alt="alternate" />
-            <img src="" alt="alternate2" />
+            <img src="https://source.unsplash.com/random" alt="alternate" />
+            <img src="https://source.unsplash.com/random" alt="alternate2" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
               eos adipisci facere nesciunt similique voluptatem assumenda ipsa
@@ -48,7 +55,16 @@ export default class RightColumn extends Component {
             </p>
           </div>
           <button onClick={this.handleToTop}>Back To Top</button>
-          <div className="social"></div>
+
+          <div className="social">
+            <div className="spacer" />
+            <div className="icons">
+              <FontAwesomeIcon icon={faFacebook} className="icon" />
+              <FontAwesomeIcon icon={faTwitterSquare} className="icon" />
+              <FontAwesomeIcon icon={faInstagram} className="icon" />
+              <FontAwesomeIcon icon={faLinkedin} className="icon" />
+            </div>
+          </div>
           <div className="copyright">copyright</div>
         </div>
       </div>
