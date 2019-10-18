@@ -27,14 +27,14 @@ export default class Home extends Component {
   }
 
   profileItems() {
-    console.log(this.state.profiles);
     return this.state.profiles.map(item => {
+      console.log(item.pic1);
       return (
         <ProfileIcon
           key={item.id}
           title={item.title}
-          pic1={item.pic1}
-          description={item.title}
+          image={item.pic1}
+          description={item.opening}
         />
       );
     });
@@ -61,10 +61,7 @@ export default class Home extends Component {
           </div>
         </div>
         <div className="profile-space">
-          <div className="items-wrapper">
-            {this.profileItems()}
-            {/* <ProfileIcon /> */}
-          </div>
+          <div className="items-wrapper">{this.profileItems()}</div>
         </div>
         <div className="bottom-navbar">
           <div className="bottomnav-buttons">
