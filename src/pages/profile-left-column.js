@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 // import {
 //   faFacebook,
@@ -8,11 +9,18 @@ import React, { Component } from "react";
 // } from "@fortawesome/free-brands-svg-icons";
 
 export default class LeftColumn extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div className="left-column">
         <img src={this.props.logo} />
-        <button>Home</button>
+
+        <Link to="/" className="home-link">
+          Home
+        </Link>
+
         <button>placeholder</button>
         <button>placeholder</button>
         <button>placeholder</button>

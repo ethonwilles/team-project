@@ -8,6 +8,7 @@ import React, { Component } from "react";
 
 import LeftColumn from "./profile-left-column";
 import RightColumn from "./profile-right-column";
+import ID from "./home";
 
 // library.add(faTrash, faFacebook);
 const url = "https://projectteam4october2019.herokuapp.com/profiles";
@@ -17,7 +18,7 @@ export default class Profile extends Component {
     this.state = {
       byline: "",
       headline: "",
-      id: 0,
+      id: this.props.id,
       logo: "",
       opening: "",
       pic1: "",
@@ -28,27 +29,28 @@ export default class Profile extends Component {
     };
   }
 
-  componentDidMount() {
-    fetch(url)
-      .then(res => res.json())
-      .then(data => {
-        this.setState({
-          byline: data[1].byline,
-          headline: data[1].headline,
-          id: data[1].id,
-          logo: data[1].logo,
-          opening: data[1].opening,
-          pic1: data[1].pic1,
-          pic2: data[1].pic2,
-          text1: data[1].text1,
-          text2: data[1].text2,
-          title: data[1].title
-        });
-        console.log(data[0].banner);
-      });
-  }
+  // componentDidMount() {
+  //   id = ID;
+  //   fetch(url)
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       this.setState({
+  //         headline: data[id].headline,
+  //         byline: data[id].byline,
+  //         logo: data[id].logo,
+  //         opening: data[id].opening,
+  //         pic1: data[id].pic1,
+  //         pic2: data[id].pic2,
+  //         text1: data[id].text1,
+  //         text2: data[id].text2,
+  //         title: data[id].title
+  //       });
+  //       console.log(data[0].banner);
+  //     });
+  // }
 
   render() {
+    console.log(this.props.id);
     return (
       <div className="page">
         <div className="left-column-wrap">
