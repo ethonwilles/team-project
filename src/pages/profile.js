@@ -13,15 +13,20 @@ library.add(faTrash, faFacebook);
 const url = "https://projectteam4october2019.herokuapp.com/profiles";
 export default class Profile extends Component {
 
+
   render() {
-    console.log(this.state);
     return (
       <div className="page">
         <div className="left-column-wrap">
-          <LeftColumn />
+          <LeftColumn logo={this.state.logo} />
         </div>
         <div className="right-column-wrap">
-          <RightColumn />
+          <RightColumn
+            banner={this.state.pic1}
+            title={this.state.title}
+            logo={this.state.logo}
+            imgs={this.state.pic2}
+          />
         </div>
       </div>
     );
