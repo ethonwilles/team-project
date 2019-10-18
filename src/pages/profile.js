@@ -31,7 +31,7 @@ export default class Profile extends Component {
   componentDidMount() {
     fetch(url)
       .then(res => res.json())
-      .then(data =>
+      .then(data => {
         this.setState({
           byline: data[1].byline,
           headline: data[1].headline,
@@ -43,19 +43,24 @@ export default class Profile extends Component {
           text1: data[1].text1,
           text2: data[1].text2,
           title: data[1].title
-        })
-      );
+        });
+        console.log(data[0].banner);
+      });
   }
 
   render() {
-    console.log(this.state);
     return (
       <div className="page">
         <div className="left-column-wrap">
-          <LeftColumn />
+          <LeftColumn logo={this.state.logo} />
         </div>
         <div className="right-column-wrap">
-          <RightColumn />
+          <RightColumn
+            banner={this.state.pic1}
+            title={this.state.title}
+            logo={this.state.logo}
+            imgs={this.state.pic2}
+          />
         </div>
       </div>
     );

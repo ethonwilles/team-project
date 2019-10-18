@@ -8,21 +8,22 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export default class RightColumn extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
   handleToTop = () => {
     window.scrollTo(0, 0);
   };
   render() {
+    console.log(this.props.banner);
     return (
       <div className="right-column">
         <div className="banner-img">
-          <img src="https://source.unsplash.com/user/erondu" alt="banner-img" />
+          <img src={this.props.banner} alt="banner-img" />
         </div>
         <div className="heading-wrapper">
           <div className="headline">
-            <h1>WOAH something happened</h1>
+            <h1>{this.props.title}</h1>
           </div>
           <div className="subheading">
             <h5>
@@ -44,8 +45,8 @@ export default class RightColumn extends Component {
               itaque voluptates, tempore velit inventore nemo totam sapiente id.
               Quia ab atque explicabo repellat dicta cum?
             </p>
-            <img src="https://source.unsplash.com/random" alt="alternate" />
-            <img src="https://source.unsplash.com/random" alt="alternate2" />
+            <img src={this.props.imgs} alt="alternate" />
+            <img src={this.props.imgs} alt="alternate2" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
               eos adipisci facere nesciunt similique voluptatem assumenda ipsa

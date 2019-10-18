@@ -11,7 +11,7 @@ export default class LeftColumn extends Component {
   render() {
     return (
       <div className="left-column">
-        <img src="https://source.unsplash.com/random" />
+        <img src={this.props.logo} />
         <button>Home</button>
         <button>placeholder</button>
         <button>placeholder</button>
